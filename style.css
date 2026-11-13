@@ -27,17 +27,18 @@ h3 + p { margin-top: .35rem; }
 p:last-child { margin-bottom: 0; }
 footer { color: var(--muted); }
 
-:root { --background: #f7f4ed; --surface: #fffdf7; --text: #242b23; --muted: #586253; --link: #365644; --line: #dcded1; }
+:root { --background: #eef4fc; --surface: #fbfdff; --text: #142e53; --muted: #4f6381; --link: #1755b3; --line: #ccdcef; }
 @media (prefers-color-scheme: dark) {
-  :root { --background: #1a211d; --surface: #232b25; --text: #f0f1e7; --muted: #bcc8b8; --link: #b7d5bd; --line: #465548; }
+  :root { --background: #101c30; --surface: #172742; --text: #f4f9ff; --muted: #b7c9e2; --link: #a9d4ff; --line: #355173; }
 }
 body.product main, body.product header, body.product footer { width: min(calc(100% - 2rem), 68rem); }
-.hero { display: grid; grid-template-columns: 1fr minmax(14rem, 34%); gap: 2rem; align-items: center; }
+.hero { background: linear-gradient(155deg, #174d9c, #0f2c67); color: #f4f9ff; border-color: #274e83; display: grid; grid-template-columns: 1fr minmax(14rem, 34%); gap: 2rem; align-items: center; }
 .hero h1 { font-family: Georgia, "Songti SC", serif; font-size: clamp(2.6rem, 7vw, 4.75rem); }
 .hero-icon { width: 3.6rem; height: 3.6rem; margin-bottom: 1rem; border-radius: .9rem; }
 .hero-shot { width: 100%; max-width: 16rem; margin-inline: auto; display: block; border: 1px solid var(--line); border-radius: 1.25rem; }
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem 2rem; margin-block: 1rem; }
-.platforms { color: var(--muted); }
+.hero .platforms { color: #cde7ff; }
+.hero a { color: #cde7ff; }
 @media (max-width: 620px) {
   .hero, .features { grid-template-columns: 1fr; }
   .hero-shot { max-width: 14rem; }
